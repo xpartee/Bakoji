@@ -4,173 +4,187 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idris Abubakar Bakoji | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="sidebar">
-        <div class="logo">IAB</div>
-        <ul class="nav-links">
-            <li class="nav-item active" data-target="home">Home</li>
-            <li class="nav-item" data-target="about">About</li>
-            <li class="nav-item" data-target="education">Education</li>
-            <li class="nav-item" data-target="skills">Skills</li>
-            <li class="nav-item" data-target="certificates">Certificates</li>
-            <li class="nav-item" data-target="projects">Projects</li>
-            <li class="nav-item" data-target="services">Services</li>
-            <li class="nav-item" data-target="experience">Experience</li>
-            <li class="nav-item" data-target="testimonials">Testimonials</li>
-            <li class="nav-item" data-target="contact">Contact</li>
-        </ul>
-    </nav>
+    <header class="navbar">
+        <div class="logo">I. A. BAKOJI</div>
+        <nav>
+            <ul class="nav-links">
+                <li class="nav-item active" data-target="home">Home</li>
+                <li class="nav-item" data-target="about">About</li>
+                <li class="nav-item" data-target="education">Education</li>
+                <li class="nav-item" data-target="skills">Skills</li>
+                <li class="nav-item" data-target="certificates">Certificates</li>
+                <li class="nav-item" data-target="projects">Projects</li>
+                <li class="nav-item" data-target="services">Services</li>
+                <li class="nav-item" data-target="experience">Experience</li>
+                <li class="nav-item" data-target="testimonials">Testimonials</li>
+                <li class="nav-item" data-target="contact">Contact</li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class="content-viewport">
+    <main class="wrapper">
         
         <section id="home" class="page-section active">
-            <div class="hero-content">
-                <span class="badge">Software Engineering Student</span>
-                <h1>Idris Abubakar Bakoji</h1>
-                <p class="subtitle">Building digital solutions from the ground up. Passionate about computer systems, networks, and frontend development.</p>
-                <button class="cta-btn" onclick="navigateTo('contact')">Let's Connect</button>
+            <div class="hero-layout">
+                <p class="section-meta">Software Engineering — Level 200</p>
+                <h1>Designing simple systems with complex dedication.</h1>
+                <p class="hero-lead">I am Idris Abubakar Bakoji, a developer bridging the gap between hardware engineering structures and modern web interfaces.</p>
+                <div class="action-row">
+                    <button class="btn btn-primary" onclick="navigateTo('contact')">Get in touch</button>
+                    <button class="btn btn-secondary" onclick="navigateTo('about')">Read profile &rarr;</button>
+                </div>
             </div>
         </section>
 
         <section id="about" class="page-section">
-            <h2>About Me</h2>
-            <div class="about-grid">
-                <div class="profile-frame">
-                    <img src="bakoji.jpg" alt="Idris Abubakar Bakoji" class="profile-img">
+            <div class="editorial-grid">
+                <div class="editorial-header">
+                    <p class="section-meta">01 / Profile</p>
+                    <h2>About Me</h2>
                 </div>
-                <div class="about-text">
-                    <p>Hello! I am Idris, a dedicated tech enthusiast driven by an intense curiosity about how software and hardware intersect to solve real-world problems.</p>
-                    <p>At 30 years old, I have transitioned from foundational computer hardware frameworks into scalable software architectures. I thrive on precision, neat layouts, and consistent learning loops.</p>
-                    <ul class="meta-info">
-                        <li><strong>Age:</strong> 30 Years (Born 01/10/1996)</li>
-                        <li><strong>Email:</strong> idrisbakoji1@gmail.com</li>
-                        <li><strong>Availability:</strong> Open to Collaborations & Internships</li>
-                    </ul>
+                <div class="editorial-media">
+                    <img src="bakoji.jpg" alt="Idris Abubakar Bakoji" class="portrait-img">
+                </div>
+                <div class="editorial-text">
+                    <p class="dropcap">Driven by a deep curiosity regarding how physical hardware interacts with code layers, I balance rigorous academic engineering benchmarks with clean, accessible interface design.</p>
+                    <p>At 30 years old, my approach to development is measured, precise, and practical. I prioritize structured logical architecture over visual noise.</p>
+                    <div class="meta-table">
+                        <div class="meta-row"><span>Date of Birth</span><span>01/10/1996 (30 Years)</span></div>
+                        <div class="meta-row"><span>Primary Email</span><span>idrisbakoji1@gmail.com</span></div>
+                        <div class="meta-row"><span>Focus Areas</span><span>Front-End Logic & Systems Architecture</span></div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="education" class="page-section">
-            <h2>Educational Journey</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="year">Present</span>
-                    <h3>Northwest University, Kano</h3>
-                    <p class="degree">B.Sc. Software Engineering (Level 200)</p>
-                    <p class="desc">Deepening knowledge in advanced algorithms, programming paradigms, and software systems architecture.</p>
+            <p class="section-meta">02 / Academic Foundation</p>
+            <h2>Education</h2>
+            <div class="academic-list">
+                <div class="academic-node">
+                    <div class="node-header">
+                        <h3>Northwest University, Kano</h3>
+                        <span class="node-date">Present</span>
+                    </div>
+                    <p class="node-sub">B.Sc. Software Engineering (Level 200)</p>
+                    <p>Focusing core coursework on algorithm structures, Object-Oriented Analysis, and foundational database architecture systems.</p>
                 </div>
-                <div class="timeline-item">
-                    <span class="year">Completed</span>
-                    <h3>Kano State Polytechnic (SOT)</h3>
-                    <p class="degree">National Diploma (ND) in Computer Engineering</p>
-                    <p class="desc">Gained comprehensive hands-on grounding in computer hardware networks, electronic systems, and digital logic design.</p>
+                <div class="academic-node">
+                    <div class="node-header">
+                        <h3>Kano State Polytechnic (SOT)</h3>
+                        <span class="node-date">Concluded</span>
+                    </div>
+                    <p class="node-sub">National Diploma (ND) in Computer Engineering</p>
+                    <p>Acquired extensive practical insight regarding microprocessors, computer networking topologies, logic gate arrays, and physical system configuration.</p>
                 </div>
             </div>
         </section>
 
         <section id="skills" class="page-section">
-            <h2>Technical Competencies</h2>
-            <p class="section-intro">Currently developing solid core roots across basic web structures. Focused entirely on clean semantics and functional logic.</p>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-info"><span>HTML5 & Semantic Markup</span> <span class="level-tag text-basic">Basic</span></div>
-                    <div class="progress-track"><div class="progress-bar width-basic"></div></div>
+            <p class="section-meta">03 / Capability Metrics</p>
+            <h2>Technical Skills</h2>
+            <p class="lead-paragraph">Believing firmly in mastery over fundamentals, I maintain a transparent, ongoing approach toward expanding my software knowledge stack.</p>
+            <div class="skills-wrapper">
+                <div class="skill-row">
+                    <span class="skill-name">HTML5 / Structural Semantics</span>
+                    <span class="skill-val">Basic / Core Proficiency</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-info"><span>CSS3 & Modern Layouts (Flexbox/Grid)</span> <span class="level-tag text-basic">Basic</span></div>
-                    <div class="progress-track"><div class="progress-bar width-basic"></div></div>
+                <div class="skill-row">
+                    <span class="skill-name">CSS3 / Adaptive Layout Engineering</span>
+                    <span class="skill-val">Basic / Core Proficiency</span>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-info"><span>JavaScript (ES6+ Logic & DOM)</span> <span class="level-tag text-basic">Basic</span></div>
-                    <div class="progress-track"><div class="progress-bar width-basic"></div></div>
+                <div class="skill-row">
+                    <span class="skill-name">JavaScript / DOM Manipulation & Logic</span>
+                    <span class="skill-val">Basic / Core Proficiency</span>
                 </div>
             </div>
         </section>
 
         <section id="certificates" class="page-section">
-            <h2>Professional Credentials</h2>
-            <div class="cert-container">
-                <div class="cert-card">
-                    <div class="cert-img-wrapper">
-                        <img src="bakojicert.jpg" alt="freeCodeCamp Certification" class="cert-img">
-                    </div>
-                    <div class="cert-details">
-                        <h3>Responsive Web Design</h3>
-                        <p class="issuer">Issued by <strong>freeCodeCamp</strong></p>
-                        <p class="duration">Rigorous program comprising over <strong>300 hours</strong> of coursework, building complex semantic structures and responsive user interfaces.</p>
-                        <a href="https://www.freecodecamp.org/certification/idrisabubakarbakoji/responsive-web-design" target="_blank" class="verify-link">Verify Credential Online &rarr;</a>
-                    </div>
+            <p class="section-meta">04 / Verified Credentials</p>
+            <h2>Certificates</h2>
+            <div class="cert-split">
+                <div class="cert-visual">
+                    <img src="bakojicert.jpg" alt="freeCodeCamp Certification Asset" class="cert-thumbnail">
+                </div>
+                <div class="cert-info">
+                    <h3>Responsive Web Design</h3>
+                    <p class="cert-institution">Issued by freeCodeCamp</p>
+                    <p>An extensive curriculum representing over 300 hours of structural design, web standards layout challenges, and cross-browser accessibility assessments.</p>
+                    <a href="https://www.freecodecamp.org/certification/idrisabubakarbakoji/responsive-web-design" target="_blank" class="text-link">Open Official Verification Link &rarr;</a>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="page-section">
-            <h2>Featured Projects</h2>
-            <div class="grid-layout">
-                <div class="card">
-                    <h3>Responsive Personal Ecosystem</h3>
-                    <p>A multi-view application consolidating profile data into a modern single-page dashboard architecture utilizing vanilla JS.</p>
-                    <span class="tech-tag">HTML</span> <span class="tech-tag">CSS</span> <span class="tech-tag">JavaScript</span>
+            <p class="section-meta">05 / Code Sandbox</p>
+            <h2>Selected Work</h2>
+            <div class="minimal-grid">
+                <div class="project-box">
+                    <h3>01 / Unified Portfolio Ecosystem</h3>
+                    <p>An intentional, architecture-driven presentation space condensing individual background modules cleanly within a decoupled single-file layout model.</p>
                 </div>
-                <div class="card">
-                    <h3>FreeCodeCamp Portfolio Projects</h3>
-                    <p>A series of responsive landing pages, documentation systems, and product layouts built according to W3C specifications.</p>
-                    <span class="tech-tag">HTML5</span> <span class="tech-tag">CSS Grid</span>
+                <div class="project-box">
+                    <h3>02 / Semantic Structure Repositories</h3>
+                    <p>A compilation of algorithmic interface structures engineered to address rigorous industry responsive standards guidelines.</p>
                 </div>
             </div>
         </section>
 
         <section id="services" class="page-section">
-            <h2>What I Do</h2>
-            <div class="grid-layout">
-                <div class="card text-center">
-                    <div class="icon">🖥️</div>
-                    <h3>Responsive Web Development</h3>
-                    <p>Crafting accessible, pixel-perfect static pages that look exceptionally stunning on desktops, tablets, and smartphones.</p>
+            <p class="section-meta">06 / Domain Utilities</p>
+            <h2>Services</h2>
+            <div class="minimal-grid">
+                <div class="service-box">
+                    <h4>Front-End Layout Engineering</h4>
+                    <p>Translating wireframes perfectly into functional, accessible layouts adhering precisely to strict structural web standards.</p>
                 </div>
-                <div class="card text-center">
-                    <div class="icon">🛠️</div>
-                    <h3>Computer Hardware Consults</h3>
-                    <p>Leveraging my Computer Engineering background to diagnose, troubleshoot, and optimize physical computing stations.</p>
+                <div class="service-box">
+                    <h4>Hardware Architecture Consultations</h4>
+                    <p>Applying rigorous Computer Engineering insights to diagnose, clean, configure, or optimize physical client workstations.</p>
                 </div>
             </div>
         </section>
 
         <section id="experience" class="page-section">
+            <p class="section-meta">07 / Professional Activity</p>
             <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="year">Current</span>
-                    <h3>Independent Software Contributor</h3>
-                    <p class="degree">Self-Directed Learning & Sandbox Builds</p>
-                    <p class="desc">Translating algorithmic knowledge from academic lectures at Northwest University directly into standard responsive interfaces.</p>
+            <div class="academic-list">
+                <div class="academic-node">
+                    <div class="node-header">
+                        <h3>Independent Development Practice</h3>
+                        <span class="node-date">Ongoing</span>
+                    </div>
+                    <p class="node-sub">Self-Directed Learning / Open Build Testing</p>
+                    <p>Consistently merging abstract algorithmic insights gained via classroom settings directly into performant code prototypes.</p>
                 </div>
             </div>
         </section>
 
         <section id="testimonials" class="page-section">
-            <h2>Endorsements & Feedback</h2>
-            <div class="grid-layout">
-                <blockquote class="testimonial-card">
-                    <p>"Idris displays an exceptionally rare grit. Balancing academic constraints with standard 300+ hour programming certificates is proof of raw commitment."</p>
-                    <cite>— Academic Peer Review</cite>
-                </blockquote>
+            <p class="section-meta">08 / Verification Notes</p>
+            <h2>Testimonials</h2>
+            <div class="quote-container">
+                <p class="quote-text">"Idris shows incredible resilience. Balancing 300+ hour programming certificates with a core Software Engineering degree illustrates true dedication to practical skills development."</p>
+                <p class="quote-author">— Academic Assessment Peer Review</p>
             </div>
         </section>
 
         <section id="contact" class="page-section">
-            <h2>Get In Touch</h2>
-            <div class="contact-wrapper">
-                <div class="contact-box">
-                    <h3>Direct Inquiries</h3>
-                    <p>Have a project proposal, an open software internship role, or a technical problem you want to look at? Drop a message.</p>
-                    <div class="contact-detail">
-                        <span>📧 Email:</span>
-                        <a href="mailto:idrisbakoji1@gmail.com">idrisbakoji1@gmail.com</a>
-                    </div>
+            <p class="section-meta">09 / Connect Channels</p>
+            <h2>Contact</h2>
+            <div class="contact-block">
+                <p class="contact-lead">Have an internship role, collaborative project opportunity, or structural hardware puzzle? Let's initiate a conversation.</p>
+                <div class="contact-item">
+                    <span class="label">General Inquiry Channels</span>
+                    <a href="mailto:idrisbakoji1@gmail.com" class="contact-link">idrisbakoji1@gmail.com</a>
                 </div>
             </div>
         </section>
